@@ -12,7 +12,11 @@ const postSchema = new Schema({
   published: {
     type:Boolean,
     default: false,
-  }
+  },
+  
+},
+{
+  timestamp: true,
 })
 
 module.exports = model("Post", postSchema);
