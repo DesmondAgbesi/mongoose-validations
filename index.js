@@ -12,7 +12,7 @@ app.use("/posts", postRouter)
 async function start(){
   await dbConnect();
 
-  app.listen(4000, ()=>{
+  app.listen(4001, ()=>{
     console.log("Server is running on http://localhost:4000")
   });
 }

@@ -16,6 +16,19 @@ const postSchema = new Schema({
   
 },
 {
+ author: {
+  type: Schema.Types.ObjectId,
+  ref: "User"
+ },
+ 
+  likedBy: [{
+    type: Schema.Types.ObjectId,
+    ref: "User"
+  },
+]
+ 
+},
+{
   timestamp: true,
 })
 
